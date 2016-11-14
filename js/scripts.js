@@ -1,14 +1,13 @@
 var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.';
-    animal = 'Zielone słonie';
-    animalUpperCased = animal.toUpperCase();
+var animal = 'Zielone słonie';
+var animalUpperCased = animal.toUpperCase();
 
-console.log(animalUpperCased)
+console.log(animalUpperCased);
 
-var textCharsAfter = text.replace('Papugi', animalUpperCased)
+var textAfterReplecement = text.replace(/^\S+/g, animalUpperCased);
 
-console.log(textCharsAfter);
+console.log(textAfterReplecement);
 
-console.log(textCharsAfter.length);
+var halfOfTextAfterReplecement = textAfterReplecement.slice(0, textAfterReplecement.length / 2);
 
-var halfOfTextCharsAfter = textCharsAfter.slice(0,45);
-console.log(halfOfTextCharsAfter);
+console.log(halfOfTextAfterReplecement);
