@@ -1,16 +1,12 @@
-var a = 3
-    b = 4
-    value = (a*a) + (2 * a * b) - (b*b)
-console.log(value)
+var a = 3;
+var b = 4;
+var value = (a * a) + (2 * a * b) - (b * b);
+console.log(value);
 
-if (value < 0) {
-    console.log('Wynik ujemny');
-}
-
-else if (value = 0){
+if (value === 0) {
     console.log('Wynik wynosi zero');
 }
 
 else {
-    console.log('Wynik dodatni');
+    value > 0 ? console.log('Wynik dodatni') : console.log('Wynik ujemny');
 }
